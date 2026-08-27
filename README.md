@@ -29,18 +29,6 @@ In addition, [Laracasts](https://laracasts.com) contains thousands of video tuto
 
 You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
 
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
@@ -56,3 +44,29 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Instructions
+
+Using Laravel Herd
+
+- Clone the repository inside ~/Herd folder
+- run composer install
+- copy .env.example to .env file
+- create your database
+- add credentials for database
+- run php artisan migrate
+- run php artisan db:seed
+
+Using postman
+
+- Create POST request to /api/login
+  Body:
+  email: admin@ps.net
+  password: password
+
+- Create GET request to /api/articles List articles
+  Headers:
+  Accept: application/json
+  Authorizarion: Bearer given-token-in-the-login
+  
+  
